@@ -3,6 +3,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
+import Hero from '../components/Hero.astro';
 import { SITE } from '../config';
 
 // Component Script:
@@ -67,6 +68,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 	</head>
 
 	<body>
+		<Hero />
 		<BlogHeader />
 		<div class="wrapper">
 			<main class="content">
